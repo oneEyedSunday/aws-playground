@@ -1,0 +1,17 @@
+--- 
+phases: 
+  build: 
+    commands: 
+      - "echo Build started on `date`"
+      - "echo Building the Docker image..."
+      - "docker build -t oneeyedsunday/servers:node_demo ."
+  post_build: 
+    commands: 
+      - "echo Build completed on `date`"
+      - "echo Pushing the Docker image..."
+      - "docker push oneeyedsunday/servers:node_demo"
+  pre_build: 
+    commands: 
+      - "echo Logging in to Docker Hub..."
+      - "docker login --username=$DOCKER_HUB_USERNAME --password=$DOCKER_HUB_PASSWORD"
+version: 0.1

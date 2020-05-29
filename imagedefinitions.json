@@ -1,0 +1,6 @@
+[
+    {
+        "name": "node-server",
+        "imageUri": "oneeyedsunday/servers:node_demo"
+    }
+]
