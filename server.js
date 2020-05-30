@@ -1,9 +1,9 @@
 const http = require('http');
 
 const requestListener = function (req, res) {
-  console.log('Hitting: ', req.url);
+  console.log('Hitting: 🔗', req.url);
   res.writeHead(200);
-  res.end('Hello, from the other side!!!');
+  res.end('Hello, from the other side!!! Again');
 }
 
 const server = http.createServer(requestListener);
