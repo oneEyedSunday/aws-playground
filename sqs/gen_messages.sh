@@ -2,8 +2,6 @@ allNames=($(whoami) 'Ravi' "Sani" "Ribaud" "George" "Hanley" "Anna" "Kendrick" "
 
 no_messages=${1:-#allNames[@]}
 
-echo ${allNames[@]}
-
 echo "Attemting to generate ${no_messages} messages"
 
 i=$no_messages
